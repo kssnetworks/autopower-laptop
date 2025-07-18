@@ -14,6 +14,9 @@ This solution is perfect for laptops running as mini-servers. It automatically:
 
 ![System Architecture]
 
+<img width="1211" height="607" alt="image" src="https://github.com/user-attachments/assets/9ba46059-d878-4bb7-ba32-4b5857f4db37" />
+
+
 The system works through a simple but effective setup:
 
 1. **Mini-Server (Laptop)** runs the monitoring script
