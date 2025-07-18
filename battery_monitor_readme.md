@@ -12,7 +12,7 @@ This solution is perfect for laptops running as mini-servers. It automatically:
 
 ## 🏗️ System Architecture
 
-![System Architecture](architecture-diagram.png)
+![System Architecture]
 
 The system works through a simple but effective setup:
 
@@ -56,10 +56,9 @@ sudo apt update
 sudo apt install upower curl bc
 ```
 
-### 2. Download the Script
+### 2. Copy the Script
 
 ```bash
-sudo curl -o /usr/local/bin/battery_monitor.sh https://raw.githubusercontent.com/yourusername/battery-monitor/main/battery_monitor.sh
 sudo chmod +x /usr/local/bin/battery_monitor.sh
 ```
 
@@ -80,7 +79,8 @@ Update these variables:
 ### 4. Set Up as System Service
 
 ```bash
-sudo curl -o /etc/systemd/system/battery-monitor.service https://raw.githubusercontent.com/yourusername/battery-monitor/main/battery-monitor.service
+nano battery-monitor.service
+sudo cp battery-monitor.service /etc/systemd/system/
 
 sudo systemctl daemon-reload
 sudo systemctl enable battery-monitor.service
