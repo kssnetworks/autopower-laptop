@@ -1,0 +1,19 @@
+[Unit]  
+Description=Battery Level Monitor for Home Assistant  
+After=network.target  
+Wants=network.target
+
+[Service]  
+Type=simple  
+User=root  
+ExecStart=/usr/local/bin/battery_monitor.sh  
+Restart=always  
+RestartSec=10  
+StandardOutput=journal  
+StandardError=journal
+
+# Environment variables (optional)  
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[Install]  
+WantedBy=multi-user.target
